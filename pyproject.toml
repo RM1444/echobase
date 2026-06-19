@@ -1,0 +1,102 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=77", "setuptools_scm>=9"]
+
+[project]
+name = "echobase-linux"
+dynamic = ["version"]
+description = "Voice control for Linux desktops. Fully local, no cloud, Wayland-native."
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Matt Hartley", email = "matt@matthartley.com"},
+]
+maintainers = [
+  {name = "Matt Hartley", email = "matt@matthartley.com"},
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Desktop Environment :: Gnome",
+  "Topic :: Home Automation",
+  "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+  "Topic :: Utilities",
+]
+keywords = [
+  "control",
+  "desktop",
+  "gnome",
+  "head",
+  "offline",
+  "tracking",
+  "voice",
+  "wayland",
+]
+readme = "README.md"
+requires-python = ">=3.10, <3.14"
+dependencies = [
+  "faster-whisper>=1.2.1",
+  "numpy>=2.2.6",
+  # Wake-word detection + bundled Silero VAD. speexdsp-ns (its optional
+  # noise-suppression extra) lacks wheels for Python >=3.13, but the core
+  # package and the features we use install fine across 3.10–3.13.
+  "openwakeword>=0.4.0",
+  "onnxruntime>=1.23.2",
+  "onnxruntime<1.24 ; python_full_version < '3.11'",
+  "pyaudio>=0.2.14",
+]
+
+[project.optional-dependencies]
+# Head tracking uses MediaPipe Face Mesh (fast, stable facial landmarks on CPU).
+# Pinned <0.10.18 for the self-contained `solutions.face_mesh` API, which bundles
+# its model in the wheel (no separate .task download). opencv is pulled in by
+# mediapipe, but listed for the webcam capture we use directly.
+head-tracking = [
+  "opencv-python>=4.13.0.90",
+  "mediapipe>=0.10.9,<0.10.18",
+]
+mypy = [
+  "mypy>=1.19.1",
+  "types-pyaudio>=0.2.16.20250801",
+]
+
+[project.scripts]
+EchoBase = "EchoBase.core.main:run"
+
+[project.urls]
+"Source Code" = "https://github.com/ctsdownloads/EchoBase"
+
+[tool.coverage.report]
+exclude_also = ["if __name__ == .__main__.:"]
+show_missing = true
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.mypy]
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tool.ruff.lint]
+extend-select = ["I"]  # "ALL" one day
+extend-ignore = ["D", "E722"]
+
+[tool.setuptools.package-dir]
+EchoBase = "src"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+# # TensorFlow Runtime from PyPI (tflite-runtime==2.14.0) only supports
+# # Python <3.12 (see dependencies above)
+# [tool.uv.sources]
+# openwakeword = { git = "https://github.com/dscripka/openWakeWord" }

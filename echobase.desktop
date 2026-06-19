@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=EchoBase
+Comment=Voice control for Linux
+Exec=/home/razvan/FACULTATE/LICENTA/easyspeak-dev/echobase.sh
+Icon=audio-input-microphone
+Terminal=false
+Categories=Utility;Accessibility;

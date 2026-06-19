@@ -1,0 +1,7 @@
+{
+  "name": "EchoBase Grid",
+  "description": "Voice-controlled navigation: window management, OCR click, and mouse grid",
+  "uuid": "echobase-grid@local",
+  "shell-version": ["47", "48", "49", "50"],
+  "version": 3
+}

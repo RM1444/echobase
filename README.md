@@ -4,7 +4,6 @@ Voice control for Linux desktops. Fully local, no cloud, Wayland-native.
 
 Say "Hey {Name}" and control your desktop with your voice — where {Name} is whatever you choose at startup.
 
-![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
 ![Desktop](https://img.shields.io/badge/desktop-GNOME%20%7C%20Wayland-green.svg)
 ![Status](https://img.shields.io/badge/status-Alpha-orange.svg)

@@ -1586,17 +1586,3 @@ A live session surfaced `labels · accessibility query failed (… timed out aft
 | `tests/core/test_main.py` | pinned normal-pace endpointing in `test_record_until_silence` |
 
 ---
-
-## License
-
-GPL-3.0 License. See [LICENSE](LICENSE) for details.
-
----
-
-## Acknowledgments
-
-- [faster-whisper](https://github.com/guillaumekln/faster-whisper) — Speech recognition (wake detection + command transcription)
-- [Piper](https://github.com/OHF-Voice/piper1-gpl) — Text-to-speech (last standalone binary from [rhasspy/piper](https://github.com/rhasspy/piper))
-- [Silero VAD](https://github.com/snakers4/silero-vad) — Voice activity detection (integrated via faster-whisper)
-- [Talon](https://talonvoice.com/) — Inspiration for voice control concepts
-- [EchoBase upstream](https://github.com/ctsdownloads/EchoBase) — Original project by Matt Hartley

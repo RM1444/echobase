@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "dysarthric_target_s": [
+      1.5,
+      3.5
+    ],
+    "any_pace_meets_min": false,
+    "finding": "No pace tolerates the 1.5 s lower bound of the dysarthric pause target; the slow pace caps at ~1.4 s. Recommend a 'very slow' pace (>=1.8 s hang) for moderate dysarthria."
+  },
+  "rows": [
+    {
+      "speech_pace": "normal",
+      "silence_hang_s": 0.6,
+      "max_utterance_s": 8.0,
+      "max_tolerated_pause_s": 0.56,
+      "meets_1.5s_min": false
+    },
+    {
+      "speech_pace": "relaxed",
+      "silence_hang_s": 1.0,
+      "max_utterance_s": 11.0,
+      "max_tolerated_pause_s": 0.96,
+      "meets_1.5s_min": false
+    },
+    {
+      "speech_pace": "slow",
+      "silence_hang_s": 1.4,
+      "max_utterance_s": 14.0,
+      "max_tolerated_pause_s": 1.36,
+      "meets_1.5s_min": false
+    }
+  ]
+}

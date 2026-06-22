@@ -1,0 +1,14 @@
+## Fuzzy-recovery decision audit
+
+| input | decision | score | routed_to |
+| --- | --- | --- | --- |
+| open firefox | direct | 1.0 | apps |
+| opn firefox | auto | 0.957 | apps |
+| opem fierfox | ask | 0.833 | (unrouted) |
+| volyume up | auto | 0.947 | system |
+| skroll down | auto | 0.909 | scroll |
+| what is the time | ask | 0.72 | (unrouted) |
+| xqzptv | reject | 0.4 | (unrouted) |
+| asdfghjkl | reject | 0.316 | (unrouted) |
+
+*Section 2.1 -- difflib near-miss recovery decisions vs profile cutoffs.*

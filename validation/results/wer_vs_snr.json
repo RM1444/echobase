@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "noise_types": [
+      "white",
+      "pink"
+    ],
+    "snr_levels": [
+      40.0,
+      50.0,
+      60.0
+    ]
+  },
+  "rows": [
+    {
+      "noise_type": "white",
+      "snr_db": 40.0,
+      "corpus_wer_pct": 4.03,
+      "command_recognition_pct": 88.24,
+      "n_passages": 2
+    },
+    {
+      "noise_type": "white",
+      "snr_db": 50.0,
+      "corpus_wer_pct": 6.04,
+      "command_recognition_pct": 82.35,
+      "n_passages": 2
+    },
+    {
+      "noise_type": "white",
+      "snr_db": 60.0,
+      "corpus_wer_pct": 4.7,
+      "command_recognition_pct": 82.35,
+      "n_passages": 2
+    },
+    {
+      "noise_type": "pink",
+      "snr_db": 40.0,
+      "corpus_wer_pct": 5.37,
+      "command_recognition_pct": 88.24,
+      "n_passages": 2
+    },
+    {
+      "noise_type": "pink",
+      "snr_db": 50.0,
+      "corpus_wer_pct": 5.37,
+      "command_recognition_pct": 82.35,
+      "n_passages": 2
+    },
+    {
+      "noise_type": "pink",
+      "snr_db": 60.0,
+      "corpus_wer_pct": 4.03,
+      "command_recognition_pct": 88.24,
+      "n_passages": 2
+    }
+  ]
+}

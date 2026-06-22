@@ -1,0 +1,892 @@
+{
+  "summary": {
+    "n_phrases": 147,
+    "accuracy": 0.9592,
+    "macro_f1": 0.8732,
+    "micro_f1": 0.9625
+  },
+  "rows": [
+    {
+      "phrase": "magnify",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "zoom in",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "high contrast on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "large text on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "big cursor on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "screen reader on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "on-screen keyboard on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "night light on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "sticky keys on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "slow keys on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "bounce keys on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "mouse keys on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "dwell click on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "key repeat on",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "pointer faster",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "double click slower",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "read selection",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "read the page",
+      "expected_plugin": "a11y",
+      "predicted_plugin": "a11y",
+      "correct": true
+    },
+    {
+      "phrase": "open firefox",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open chrome",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open chromium",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open brave",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open spotify",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open steam",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open calculator",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open settings",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open vs code",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open libreoffice",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open gimp",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open vlc",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open thunderbird",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open discord",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open slack",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open telegram",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open signal",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open zoom",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open obs",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open audacity",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open weather",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open clocks",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open maps",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open contacts",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open music",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open files",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open terminal",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open browser",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "open system monitor",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close firefox",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close chrome",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close chromium",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close brave",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close spotify",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close steam",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close calculator",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close settings",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close vs code",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close libreoffice",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close gimp",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close vlc",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close thunderbird",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close discord",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close slack",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close telegram",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close signal",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close zoom",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close obs",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close audacity",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close weather",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close clocks",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close maps",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close contacts",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close music",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close files",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close terminal",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close browser",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "close system monitor",
+      "expected_plugin": "apps",
+      "predicted_plugin": "apps",
+      "correct": true
+    },
+    {
+      "phrase": "folders: documents, downloads, pictures, screenshots, music, videos,",
+      "expected_plugin": "files",
+      "predicted_plugin": "system",
+      "correct": false
+    },
+    {
+      "phrase": "home, desktop, config, trash, projects, code, root, tmp",
+      "expected_plugin": "files",
+      "predicted_plugin": "(unrouted)",
+      "correct": false
+    },
+    {
+      "phrase": "copy",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "paste",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "cut",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "undo",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "redo",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "select all",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "save",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "print",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "switch app",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "press enter",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "press tab",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "press escape",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "press space",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "press backspace",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "press delete",
+      "expected_plugin": "keyboard",
+      "predicted_plugin": "keyboard",
+      "correct": true
+    },
+    {
+      "phrase": "show labels",
+      "expected_plugin": "labels",
+      "predicted_plugin": "labels",
+      "correct": true
+    },
+    {
+      "phrase": "show buttons",
+      "expected_plugin": "labels",
+      "predicted_plugin": "labels",
+      "correct": true
+    },
+    {
+      "phrase": "label buttons",
+      "expected_plugin": "labels",
+      "predicted_plugin": "labels",
+      "correct": true
+    },
+    {
+      "phrase": "play",
+      "expected_plugin": "media",
+      "predicted_plugin": "media",
+      "correct": true
+    },
+    {
+      "phrase": "pause",
+      "expected_plugin": "media",
+      "predicted_plugin": "media",
+      "correct": true
+    },
+    {
+      "phrase": "play pause",
+      "expected_plugin": "media",
+      "predicted_plugin": "media",
+      "correct": true
+    },
+    {
+      "phrase": "stop music",
+      "expected_plugin": "media",
+      "predicted_plugin": "media",
+      "correct": true
+    },
+    {
+      "phrase": "next track",
+      "expected_plugin": "media",
+      "predicted_plugin": "media",
+      "correct": true
+    },
+    {
+      "phrase": "previous track",
+      "expected_plugin": "media",
+      "predicted_plugin": "media",
+      "correct": true
+    },
+    {
+      "phrase": "scroll left",
+      "expected_plugin": "scroll",
+      "predicted_plugin": "scroll",
+      "correct": true
+    },
+    {
+      "phrase": "scroll right",
+      "expected_plugin": "scroll",
+      "predicted_plugin": "scroll",
+      "correct": true
+    },
+    {
+      "phrase": "keep scrolling",
+      "expected_plugin": "scroll",
+      "predicted_plugin": "scroll",
+      "correct": true
+    },
+    {
+      "phrase": "keep scrolling down",
+      "expected_plugin": "scroll",
+      "predicted_plugin": "scroll",
+      "correct": true
+    },
+    {
+      "phrase": "keep scrolling up",
+      "expected_plugin": "scroll",
+      "predicted_plugin": "scroll",
+      "correct": true
+    },
+    {
+      "phrase": "stop scrolling",
+      "expected_plugin": "scroll",
+      "predicted_plugin": "scroll",
+      "correct": true
+    },
+    {
+      "phrase": "type my email",
+      "expected_plugin": "snippets",
+      "predicted_plugin": "snippets",
+      "correct": true
+    },
+    {
+      "phrase": "type my phone",
+      "expected_plugin": "snippets",
+      "predicted_plugin": "snippets",
+      "correct": true
+    },
+    {
+      "phrase": "type my address",
+      "expected_plugin": "snippets",
+      "predicted_plugin": "snippets",
+      "correct": true
+    },
+    {
+      "phrase": "type my name",
+      "expected_plugin": "snippets",
+      "predicted_plugin": "snippets",
+      "correct": true
+    },
+    {
+      "phrase": "lock screen",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "suspend",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "screenshot",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "screenshot area",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "volume up",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "volume down",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "mute",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "unmute",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "mute microphone",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "brightness up",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "brightness down",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "do not disturb on",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "do not disturb off",
+      "expected_plugin": "system",
+      "predicted_plugin": "system",
+      "correct": true
+    },
+    {
+      "phrase": "what time",
+      "expected_plugin": "time",
+      "predicted_plugin": "time",
+      "correct": true
+    },
+    {
+      "phrase": "what date",
+      "expected_plugin": "time",
+      "predicted_plugin": "time",
+      "correct": true
+    },
+    {
+      "phrase": "what day",
+      "expected_plugin": "time",
+      "predicted_plugin": "time",
+      "correct": true
+    },
+    {
+      "phrase": "minimize",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "maximize",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "restore window",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "fullscreen",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "exit fullscreen",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "close window",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "snap left",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "snap right",
+      "expected_plugin": "window",
+      "predicted_plugin": "window",
+      "correct": true
+    },
+    {
+      "phrase": "next workspace",
+      "expected_plugin": "window",
+      "predicted_plugin": "media",
+      "correct": false
+    },
+    {
+      "phrase": "previous workspace",
+      "expected_plugin": "window",
+      "predicted_plugin": "media",
+      "correct": false
+    },
+    {
+      "phrase": "list windows",
+      "expected_plugin": "windows",
+      "predicted_plugin": "windows",
+      "correct": true
+    },
+    {
+      "phrase": "next window",
+      "expected_plugin": "windows",
+      "predicted_plugin": "media",
+      "correct": false
+    },
+    {
+      "phrase": "previous window",
+      "expected_plugin": "windows",
+      "predicted_plugin": "media",
+      "correct": false
+    },
+    {
+      "phrase": "pick window",
+      "expected_plugin": "windows",
+      "predicted_plugin": "windows",
+      "correct": true
+    },
+    {
+      "phrase": "switch window",
+      "expected_plugin": "windows",
+      "predicted_plugin": "windows",
+      "correct": true
+    },
+    {
+      "phrase": "help",
+      "expected_plugin": "base",
+      "predicted_plugin": "base",
+      "correct": true
+    },
+    {
+      "phrase": "stop",
+      "expected_plugin": "base",
+      "predicted_plugin": "base",
+      "correct": true
+    },
+    {
+      "phrase": "exit",
+      "expected_plugin": "base",
+      "predicted_plugin": "base",
+      "correct": true
+    },
+    {
+      "phrase": "quit",
+      "expected_plugin": "base",
+      "predicted_plugin": "base",
+      "correct": true
+    }
+  ]
+}

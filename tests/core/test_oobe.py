@@ -80,3 +80,54 @@ def test_step_recognition_defaults_to_balanced_when_nothing_understood():
     assert cfg["recognition_profile"] == config.DEFAULT_RECOGNITION_PROFILE == 2
     assert cfg["whisper_model"] == "small.en"
     assert cfg["whisper_beam"] == 5
+
+
+# --- _step_autostart --------------------------------------------------------
+
+
+def test_step_autostart_yes_enables_and_writes_entry():
+    core = Mock()
+    cfg = {}
+    with (
+        patch.object(oobe, "_ask", return_value="yes"),
+        patch.object(config, "set_autostart", return_value=True) as set_auto,
+    ):
+        oobe._step_autostart(core, cfg)
+    set_auto.assert_called_once_with(True)
+    assert cfg["start_on_boot"] is True
+
+
+def test_step_autostart_no_disables():
+    core = Mock()
+    cfg = {}
+    with (
+        patch.object(oobe, "_ask", return_value="no"),
+        patch.object(config, "set_autostart", return_value=True) as set_auto,
+    ):
+        oobe._step_autostart(core, cfg)
+    set_auto.assert_called_once_with(False)
+    assert cfg["start_on_boot"] is False
+
+
+def test_step_autostart_defaults_to_off_on_silence():
+    core = Mock()
+    cfg = {}
+    with (
+        patch.object(oobe, "_ask", return_value=""),
+        patch.object(config, "set_autostart", return_value=True) as set_auto,
+    ):
+        oobe._step_autostart(core, cfg)
+    set_auto.assert_called_once_with(False)
+    assert cfg["start_on_boot"] is False
+
+
+def test_step_autostart_records_off_when_write_fails():
+    """A wanted-but-failed setup leaves the preference off, matching reality."""
+    core = Mock()
+    cfg = {}
+    with (
+        patch.object(oobe, "_ask", return_value="yes"),
+        patch.object(config, "set_autostart", return_value=False),
+    ):
+        oobe._step_autostart(core, cfg)
+    assert cfg["start_on_boot"] is False

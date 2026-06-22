@@ -1,0 +1,10 @@
+{
+  "commands": [
+    {"phrase": "open chrome",     "expected_plugin": "apps"},
+    {"phrase": "scroll up",       "expected_plugin": "scroll"},
+    {"phrase": "brightness down", "expected_plugin": "system"},
+    {"phrase": "pause",           "expected_plugin": "media"},
+    {"phrase": "maximize",        "expected_plugin": "window"},
+    {"phrase": "close window",    "expected_plugin": "window"}
+  ]
+}

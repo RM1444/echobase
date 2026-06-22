@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "backend": "resource",
+    "count": 300,
+    "warmup": 50,
+    "baseline_mb": 638.09,
+    "final_mb": 638.09,
+    "post_warmup_growth_mb": 0.0,
+    "throughput_cmd_per_s": 3037.0,
+    "verdict": "flat"
+  },
+  "rows": [
+    {
+      "command_index": 0,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.0
+    },
+    {
+      "command_index": 50,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.02
+    },
+    {
+      "command_index": 100,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.03
+    },
+    {
+      "command_index": 150,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.05
+    },
+    {
+      "command_index": 200,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.06
+    },
+    {
+      "command_index": 250,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.08
+    },
+    {
+      "command_index": 299,
+      "rss_mb": 638.09,
+      "cpu_pct": -1.0,
+      "elapsed_s": 0.1
+    }
+  ]
+}

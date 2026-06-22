@@ -1585,3 +1585,55 @@ A live session surfaced `labels · accessibility query failed (… timed out aft
 | `tests/core/test_main.py` | pinned normal-pace endpointing in `test_record_until_silence` |
 
 ---
+
+### Session 8 — "Start on Boot" in the OOBE (Launch at Login)
+
+Added a new first-run preference: the user can choose, by voice, whether EchoBase should **start automatically when they turn on their computer**. This matters for the target audience — a locomotory-impaired user shouldn't have to manually launch their voice-control assistant on every boot.
+
+#### Approach — XDG autostart, not systemd
+
+The chosen mechanism is the **cross-desktop XDG autostart spec**: a `.desktop` file dropped in `~/.config/autostart/` is launched at login by GNOME, KDE, XFCE, and others. We deliberately *avoided* a systemd user unit:
+
+- The app is a **desktop/session** program (it needs the graphical session, the user's audio devices, AT-SPI, and the display) — autostart fires at the right moment in session startup, whereas a systemd unit would need `graphical-session.target` wiring and `DISPLAY`/`WAYLAND_DISPLAY` plumbing.
+- The autostart file is a single, inspectable, user-removable artifact — no `systemctl --user enable` privileges or daemon-reload dance.
+
+Enabling **writes** `~/.config/autostart/echobase.desktop`; disabling **removes** it. The choice is applied **immediately** in the OOBE (not just recorded for next time), so the step doubles as the de-facto on/off toggle.
+
+#### How the launch command is resolved
+
+*Blockage:* the `Exec=` line must point at *something runnable*, but that differs between an installed package and a dev checkout. *Resolution:* `config.autostart_command()` tries, in order:
+
+1. `shutil.which("EchoBase")` — the installed console script (`[project.scripts]` in `pyproject.toml`).
+2. The repo's `echobase.sh` launcher (dev checkout), located relative to the module via `Path(__file__).resolve().parents[2]`.
+3. `f"{sys.executable} -m EchoBase.core.main"` — last-resort module re-run, so autostart works even from source.
+
+The generated entry sets `Terminal=false` and `X-GNOME-Autostart-enabled=true` so it runs headless and isn't disabled by GNOME's autostart toggle.
+
+- **Graceful failure.** *Blockage:* a read-only or unwritable `~/.config` would crash setup. *Resolution:* `set_autostart()` catches `OSError`, returns `False`, and the OOBE step tells the user "I couldn't set that up, but you can turn it on later." When a wanted setup fails, `start_on_boot` is recorded as **off** so the saved config matches reality on disk.
+- **Idempotent disable.** Disabling uses `unlink(missing_ok=True)`, so saying "no" when nothing was ever written is a no-op that still reports success.
+
+#### New config surface (`src/core/config.py`)
+
+| Name | Purpose |
+|------|---------|
+| `start_on_boot` (default `False`) | The saved preference |
+| `AUTOSTART_DIR` / `AUTOSTART_FILE` | `~/.config/autostart/echobase.desktop` |
+| `autostart_command()` | Resolves the `Exec=` launch command (3-tier fallback above) |
+| `_autostart_desktop_entry()` | Renders the `.desktop` file contents |
+| `set_autostart(enabled)` | Writes/removes the entry; returns `True`/`False`, never raises |
+| `autostart_enabled()` | Whether the entry currently exists |
+
+The OOBE step `oobe._step_autostart` asks the yes/no question (defaulting to **off** on silence, like the other opt-in steps), and is wired into `run()` just before the final friendly-replies step.
+
+**Test status:** all new tests pass — `tests/core/test_autostart.py` (enable writes a valid entry, disable removes it, idempotent disable, `OSError` → `False`, command resolution prefers the installed script and falls back otherwise) and 4 new cases in `tests/core/test_oobe.py` (yes enables, no disables, silence defaults off, failed write records off). The one pre-existing, environment-only failure remains: `test_cli.py::test_entrypoint` (the `EchoBase` console script isn't installed on PATH in this venv). `ruff format`/`check` clean on the changed files.
+
+#### Summary of Files Modified (Session 8)
+
+| File | Changes |
+|------|---------|
+| `src/core/config.py` | `start_on_boot` default; `AUTOSTART_DIR`/`AUTOSTART_FILE`; `autostart_command`, `_autostart_desktop_entry`, `set_autostart`, `autostart_enabled`; `import sys` |
+| `src/core/oobe.py` | `_step_autostart` step; wired into `run()` before `_step_friendly` |
+| `tests/core/test_autostart.py` | new — config autostart helper tests |
+| `tests/core/test_oobe.py` | added `_step_autostart` tests (yes/no/silence/failed-write) |
+
+---

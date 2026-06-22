@@ -1,0 +1,13 @@
+## Stress: memory + CPU over commands
+
+| command_index | rss_mb | cpu_pct | elapsed_s |
+| --- | --- | --- | --- |
+| 0 | 638.09 | -1.0 | 0.0 |
+| 50 | 638.09 | -1.0 | 0.02 |
+| 100 | 638.09 | -1.0 | 0.03 |
+| 150 | 638.09 | -1.0 | 0.05 |
+| 200 | 638.09 | -1.0 | 0.06 |
+| 250 | 638.09 | -1.0 | 0.08 |
+| 299 | 638.09 | -1.0 | 0.1 |
+
+*Section 3.3 -- RSS/CPU curve over consecutive commands; flat => no leak.*

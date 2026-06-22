@@ -390,6 +390,31 @@ def _step_snippets(core, cfg):
     core.speak("Saved your text shortcuts.")
 
 
+def _step_autostart(core, cfg):
+    """Offer to launch EchoBase automatically when the computer starts.
+
+    Writing/removing the XDG autostart entry happens here so the choice takes
+    effect immediately, not just on the next setup. If the entry can't be
+    written we tell the user and leave the preference off."""
+    ans = _ask(
+        core,
+        "Would you like me to start automatically when you turn on your "
+        "computer? Say yes or no.",
+        bias="yes no",
+    )
+    enabled = _wants_yes(ans, default=False)
+    ok = config.set_autostart(enabled)
+    cfg["start_on_boot"] = enabled and ok
+    if enabled:
+        core.speak(
+            "Okay, I'll start up with your computer."
+            if ok
+            else "I couldn't set that up, but you can turn it on later."
+        )
+    else:
+        core.speak("Okay, I won't start automatically.")
+
+
 def _step_friendly(core, cfg):
     ans = _ask(
         core,
@@ -433,6 +458,7 @@ def run(core, cfg=None):
     _step_accessibility(core, cfg)
     _step_browser(core, cfg)
     _step_snippets(core, cfg)
+    _step_autostart(core, cfg)
     _step_friendly(core, cfg)
 
     cfg["oobe_completed"] = True

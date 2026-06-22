@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "total_commands": 1000,
+    "warmup": 100,
+    "baseline_kb": 7.9,
+    "final_kb": 9.5,
+    "post_warmup_growth_kb": 1.6,
+    "growth_limit_kb": 512,
+    "verdict": "flat"
+  },
+  "rows": [
+    {
+      "command_index": 0,
+      "traced_kb": 3.6
+    },
+    {
+      "command_index": 100,
+      "traced_kb": 7.9
+    },
+    {
+      "command_index": 200,
+      "traced_kb": 9.0
+    },
+    {
+      "command_index": 300,
+      "traced_kb": 9.8
+    },
+    {
+      "command_index": 400,
+      "traced_kb": 11.1
+    },
+    {
+      "command_index": 500,
+      "traced_kb": 12.2
+    },
+    {
+      "command_index": 600,
+      "traced_kb": 12.8
+    },
+    {
+      "command_index": 700,
+      "traced_kb": 14.0
+    },
+    {
+      "command_index": 800,
+      "traced_kb": 15.3
+    },
+    {
+      "command_index": 900,
+      "traced_kb": 15.9
+    },
+    {
+      "command_index": 999,
+      "traced_kb": 17.5
+    }
+  ]
+}

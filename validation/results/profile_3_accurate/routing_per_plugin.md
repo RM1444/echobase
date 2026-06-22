@@ -1,0 +1,19 @@
+## Command-routing Precision/Recall/F1 per plugin
+
+| label | precision | recall | f1 | support | tp | fp | fn |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| a11y | 1.0 | 1.0 | 1.0 | 18 | 18 | 0 | 0 |
+| apps | 1.0 | 1.0 | 1.0 | 58 | 58 | 0 | 0 |
+| base | 1.0 | 1.0 | 1.0 | 4 | 4 | 0 | 0 |
+| files | 0.0 | 0.0 | 0.0 | 2 | 0 | 0 | 2 |
+| keyboard | 1.0 | 1.0 | 1.0 | 15 | 15 | 0 | 0 |
+| labels | 1.0 | 1.0 | 1.0 | 3 | 3 | 0 | 0 |
+| media | 0.6 | 1.0 | 0.75 | 6 | 6 | 4 | 0 |
+| scroll | 1.0 | 1.0 | 1.0 | 6 | 6 | 0 | 0 |
+| snippets | 1.0 | 1.0 | 1.0 | 4 | 4 | 0 | 0 |
+| system | 0.9286 | 1.0 | 0.963 | 13 | 13 | 1 | 0 |
+| time | 1.0 | 1.0 | 1.0 | 3 | 3 | 0 | 0 |
+| window | 1.0 | 0.8 | 0.8889 | 10 | 8 | 0 | 2 |
+| windows | 1.0 | 0.6 | 0.75 | 5 | 3 | 0 | 2 |
+
+*Section 1.2 -- per-plugin routing quality.*

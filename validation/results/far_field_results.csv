@@ -1,0 +1,31 @@
+distance_m,angle_deg,command,woke,transcript,correct_action
+1,0,open firefox,y,y,y
+1,0,scroll down,y,y,n
+1,0,volume up,y,y,y
+1,0,minimize,y,y,y
+1,0,maximize,y,y,y
+1,0,copy,y,y,y
+1,0,paste,y,y,y
+1,0,play,y,y,y
+1,0,pause,y,y,y
+1,0,what day is it,y,y,y
+2,0,open firefox,y,y,y
+2,0,scroll down,y,y,n
+2,0,volume up,y,y,y
+2,0,minimize,y,y,y
+2,0,maximize,y,y,y
+2,0,copy,y,y,y
+2,0,paste,y,y,y
+2,0,play,y,y,y
+2,0,pause,y,y,y
+2,0,what day is it,y,y,y
+3,0,open firefox,y,y,y
+3,0,scroll down,y,y,n
+3,0,volume up,y,y,y
+3,0,minimize,y,n,n
+3,0,maximize,y,y,y
+3,0,copy,y,y,y
+3,0,paste,y,y,y
+3,0,play,y,y,y
+3,0,pause,y,y,y
+3,0,what day is it,y,n,n

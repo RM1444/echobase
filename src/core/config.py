@@ -13,6 +13,7 @@ setup truly resets rather than persisting. See :func:`debug_enabled`.
 import json
 import os
 import shutil
+import sys
 import urllib.request
 from collections import namedtuple
 from pathlib import Path
@@ -21,6 +22,13 @@ CONFIG_DIR = Path(os.path.expanduser("~/.config/echobase"))
 CONFIG_FILE = CONFIG_DIR / "config.json"
 
 PIPER_DIR = Path(os.path.expanduser("~/.local/share/piper"))
+
+# --- Autostart (start on login) ---------------------------------------------
+# "Start when my computer starts" is implemented with the cross-desktop XDG
+# autostart spec: a .desktop file dropped in ~/.config/autostart is launched at
+# login by GNOME, KDE, XFCE, etc. Enabling writes the file; disabling removes it.
+AUTOSTART_DIR = Path(os.path.expanduser("~/.config/autostart"))
+AUTOSTART_FILE = AUTOSTART_DIR / "echobase.desktop"
 
 # --- Voices -----------------------------------------------------------------
 # Map a spoken gender choice to a Piper voice. Both ship as a .onnx model plus
@@ -133,6 +141,8 @@ DEFAULTS = {
     "voice_gender": "feminine",
     "speech_rate": "normal",
     "friendly_messages": True,  # greetings + chatty confirmations
+    # --- startup ---
+    "start_on_boot": False,  # launch EchoBase automatically at login (XDG autostart)
     # --- motor-accessibility preferences ---
     "dwell_enabled": False,  # auto-click when the cursor rests still
     "dwell_seconds": 1.5,  # how long to rest before a dwell click fires
@@ -360,6 +370,60 @@ def reset():
         return True
     except FileNotFoundError:
         return False
+
+
+def autostart_command():
+    """Best-effort command line that relaunches EchoBase at login.
+
+    Prefers the installed ``EchoBase`` console script; in a dev checkout falls
+    back to the launcher script shipped at the repo root; finally re-runs the
+    module with the current interpreter so autostart still works from source.
+    """
+    exe = shutil.which("EchoBase")
+    if exe:
+        return exe
+    script = Path(__file__).resolve().parents[2] / "echobase.sh"
+    if script.exists():
+        return str(script)
+    return f"{sys.executable} -m EchoBase.core.main"
+
+
+def _autostart_desktop_entry():
+    """Render the XDG autostart .desktop file contents."""
+    return (
+        "[Desktop Entry]\n"
+        "Type=Application\n"
+        "Name=EchoBase\n"
+        "Comment=Voice control for Linux\n"
+        f"Exec={autostart_command()}\n"
+        "Icon=audio-input-microphone\n"
+        "Terminal=false\n"
+        "Categories=Utility;Accessibility;\n"
+        "X-GNOME-Autostart-enabled=true\n"
+    )
+
+
+def set_autostart(enabled):
+    """Enable or disable launching EchoBase at login. Returns True on success.
+
+    Enabling writes ``~/.config/autostart/echobase.desktop``; disabling removes
+    it. Never raises — a filesystem error just returns False so the caller can
+    tell the user it couldn't be set up.
+    """
+    try:
+        if enabled:
+            AUTOSTART_DIR.mkdir(parents=True, exist_ok=True)
+            AUTOSTART_FILE.write_text(_autostart_desktop_entry())
+        else:
+            AUTOSTART_FILE.unlink(missing_ok=True)
+        return True
+    except OSError:
+        return False
+
+
+def autostart_enabled():
+    """True when the XDG autostart entry is present."""
+    return AUTOSTART_FILE.exists()
 
 
 def length_scale(rate):

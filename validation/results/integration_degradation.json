@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "finding": "Failure feedback is inconsistent: missing-resource failures (e.g. app not installed) are spoken; a downed extension / failed D-Bus call is typically silent (terminal log only)."
+  },
+  "rows": [
+    {
+      "plugin": "window",
+      "command": "minimize",
+      "crashed": false,
+      "speaks_on_failure": false,
+      "spoken": ""
+    },
+    {
+      "plugin": "keyboard",
+      "command": "copy",
+      "crashed": false,
+      "speaks_on_failure": false,
+      "spoken": ""
+    },
+    {
+      "plugin": "media",
+      "command": "play",
+      "crashed": false,
+      "speaks_on_failure": true,
+      "spoken": "Playing."
+    },
+    {
+      "plugin": "apps",
+      "command": "open firefox",
+      "crashed": false,
+      "speaks_on_failure": true,
+      "spoken": "firefox not installed."
+    },
+    {
+      "plugin": "system",
+      "command": "volume up",
+      "crashed": false,
+      "speaks_on_failure": true,
+      "spoken": "Volume up."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "auto_cutoff": 0.85,
+    "ask_cutoff": 0.6,
+    "profile": 2
+  },
+  "rows": [
+    {
+      "input": "open firefox",
+      "decision": "direct",
+      "score": 1.0,
+      "routed_to": "apps"
+    },
+    {
+      "input": "opn firefox",
+      "decision": "auto",
+      "score": 0.957,
+      "routed_to": "apps"
+    },
+    {
+      "input": "opem fierfox",
+      "decision": "ask",
+      "score": 0.833,
+      "routed_to": "(unrouted)"
+    },
+    {
+      "input": "volyume up",
+      "decision": "auto",
+      "score": 0.947,
+      "routed_to": "system"
+    },
+    {
+      "input": "skroll down",
+      "decision": "auto",
+      "score": 0.909,
+      "routed_to": "scroll"
+    },
+    {
+      "input": "what is the time",
+      "decision": "ask",
+      "score": 0.72,
+      "routed_to": "(unrouted)"
+    },
+    {
+      "input": "xqzptv",
+      "decision": "reject",
+      "score": 0.4,
+      "routed_to": "(unrouted)"
+    },
+    {
+      "input": "asdfghjkl",
+      "decision": "reject",
+      "score": 0.316,
+      "routed_to": "(unrouted)"
+    }
+  ]
+}

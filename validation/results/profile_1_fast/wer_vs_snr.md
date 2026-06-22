@@ -1,0 +1,12 @@
+## WER vs SNR by noise type
+
+| noise_type | snr_db | corpus_wer_pct | command_recognition_pct | n_passages |
+| --- | --- | --- | --- | --- |
+| white | 40.0 | 8.72 | 94.12 | 2 |
+| white | 50.0 | 8.72 | 94.12 | 2 |
+| white | 60.0 | 10.07 | 94.12 | 2 |
+| pink | 40.0 | 9.4 | 94.12 | 2 |
+| pink | 50.0 | 12.75 | 94.12 | 2 |
+| pink | 60.0 | 10.07 | 94.12 | 2 |
+
+*Section 1.4 -- recognition degradation under white/pink/babble noise.*

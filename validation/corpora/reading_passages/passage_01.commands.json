@@ -1,0 +1,15 @@
+{
+  "commands": [
+    {"phrase": "open firefox",     "expected_plugin": "apps"},
+    {"phrase": "scroll down",      "expected_plugin": "scroll"},
+    {"phrase": "next track",       "expected_plugin": "media"},
+    {"phrase": "volume up",        "expected_plugin": "system"},
+    {"phrase": "switch to firefox","expected_plugin": "windows"},
+    {"phrase": "copy",             "expected_plugin": "keyboard"},
+    {"phrase": "paste",            "expected_plugin": "keyboard"},
+    {"phrase": "undo",             "expected_plugin": "keyboard"},
+    {"phrase": "minimize",         "expected_plugin": "window"},
+    {"phrase": "what day is it",   "expected_plugin": "time"},
+    {"phrase": "lock the screen",  "expected_plugin": "system"}
+  ]
+}

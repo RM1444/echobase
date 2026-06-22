@@ -1,0 +1,17 @@
+## Memory stability over 1000 commands (traced heap)
+
+| command_index | traced_kb |
+| --- | --- |
+| 0 | 3.6 |
+| 100 | 7.9 |
+| 200 | 9.0 |
+| 300 | 9.8 |
+| 400 | 11.1 |
+| 500 | 12.2 |
+| 600 | 12.8 |
+| 700 | 14.0 |
+| 800 | 15.3 |
+| 900 | 15.9 |
+| 999 | 17.5 |
+
+*Section 3.3 -- post-warmup traced-heap growth; flat => no leak.*

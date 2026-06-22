@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "condition": "clean",
+    "n_passages": 2,
+    "corpus_wer_pct": 6.04,
+    "command_recognition_pct": 82.35,
+    "total_ref_words": 149,
+    "total_commands": 17,
+    "profile": 4
+  },
+  "rows": [
+    {
+      "passage": "passage_01",
+      "condition": "clean",
+      "wer_pct": 9.3,
+      "ref_words": 86,
+      "errors": 8,
+      "n_commands": 11,
+      "commands_recognized": 9,
+      "command_recognition_pct": 81.82
+    },
+    {
+      "passage": "passage_02",
+      "condition": "clean",
+      "wer_pct": 1.59,
+      "ref_words": 63,
+      "errors": 1,
+      "n_commands": 6,
+      "commands_recognized": 5,
+      "command_recognition_pct": 83.33
+    }
+  ]
+}

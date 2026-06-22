@@ -1,0 +1,148 @@
+phrase,expected_plugin,predicted_plugin,correct
+magnify,a11y,a11y,True
+zoom in,a11y,a11y,True
+high contrast on,a11y,a11y,True
+large text on,a11y,a11y,True
+big cursor on,a11y,a11y,True
+screen reader on,a11y,a11y,True
+on-screen keyboard on,a11y,a11y,True
+night light on,a11y,a11y,True
+sticky keys on,a11y,a11y,True
+slow keys on,a11y,a11y,True
+bounce keys on,a11y,a11y,True
+mouse keys on,a11y,a11y,True
+dwell click on,a11y,a11y,True
+key repeat on,a11y,a11y,True
+pointer faster,a11y,a11y,True
+double click slower,a11y,a11y,True
+read selection,a11y,a11y,True
+read the page,a11y,a11y,True
+open firefox,apps,apps,True
+open chrome,apps,apps,True
+open chromium,apps,apps,True
+open brave,apps,apps,True
+open spotify,apps,apps,True
+open steam,apps,apps,True
+open calculator,apps,apps,True
+open settings,apps,apps,True
+open vs code,apps,apps,True
+open libreoffice,apps,apps,True
+open gimp,apps,apps,True
+open vlc,apps,apps,True
+open thunderbird,apps,apps,True
+open discord,apps,apps,True
+open slack,apps,apps,True
+open telegram,apps,apps,True
+open signal,apps,apps,True
+open zoom,apps,apps,True
+open obs,apps,apps,True
+open audacity,apps,apps,True
+open weather,apps,apps,True
+open clocks,apps,apps,True
+open maps,apps,apps,True
+open contacts,apps,apps,True
+open music,apps,apps,True
+open files,apps,apps,True
+open terminal,apps,apps,True
+open browser,apps,apps,True
+open system monitor,apps,apps,True
+close firefox,apps,apps,True
+close chrome,apps,apps,True
+close chromium,apps,apps,True
+close brave,apps,apps,True
+close spotify,apps,apps,True
+close steam,apps,apps,True
+close calculator,apps,apps,True
+close settings,apps,apps,True
+close vs code,apps,apps,True
+close libreoffice,apps,apps,True
+close gimp,apps,apps,True
+close vlc,apps,apps,True
+close thunderbird,apps,apps,True
+close discord,apps,apps,True
+close slack,apps,apps,True
+close telegram,apps,apps,True
+close signal,apps,apps,True
+close zoom,apps,apps,True
+close obs,apps,apps,True
+close audacity,apps,apps,True
+close weather,apps,apps,True
+close clocks,apps,apps,True
+close maps,apps,apps,True
+close contacts,apps,apps,True
+close music,apps,apps,True
+close files,apps,apps,True
+close terminal,apps,apps,True
+close browser,apps,apps,True
+close system monitor,apps,apps,True
+"folders: documents, downloads, pictures, screenshots, music, videos,",files,system,False
+"home, desktop, config, trash, projects, code, root, tmp",files,(unrouted),False
+copy,keyboard,keyboard,True
+paste,keyboard,keyboard,True
+cut,keyboard,keyboard,True
+undo,keyboard,keyboard,True
+redo,keyboard,keyboard,True
+select all,keyboard,keyboard,True
+save,keyboard,keyboard,True
+print,keyboard,keyboard,True
+switch app,keyboard,keyboard,True
+press enter,keyboard,keyboard,True
+press tab,keyboard,keyboard,True
+press escape,keyboard,keyboard,True
+press space,keyboard,keyboard,True
+press backspace,keyboard,keyboard,True
+press delete,keyboard,keyboard,True
+show labels,labels,labels,True
+show buttons,labels,labels,True
+label buttons,labels,labels,True
+play,media,media,True
+pause,media,media,True
+play pause,media,media,True
+stop music,media,media,True
+next track,media,media,True
+previous track,media,media,True
+scroll left,scroll,scroll,True
+scroll right,scroll,scroll,True
+keep scrolling,scroll,scroll,True
+keep scrolling down,scroll,scroll,True
+keep scrolling up,scroll,scroll,True
+stop scrolling,scroll,scroll,True
+type my email,snippets,snippets,True
+type my phone,snippets,snippets,True
+type my address,snippets,snippets,True
+type my name,snippets,snippets,True
+lock screen,system,system,True
+suspend,system,system,True
+screenshot,system,system,True
+screenshot area,system,system,True
+volume up,system,system,True
+volume down,system,system,True
+mute,system,system,True
+unmute,system,system,True
+mute microphone,system,system,True
+brightness up,system,system,True
+brightness down,system,system,True
+do not disturb on,system,system,True
+do not disturb off,system,system,True
+what time,time,time,True
+what date,time,time,True
+what day,time,time,True
+minimize,window,window,True
+maximize,window,window,True
+restore window,window,window,True
+fullscreen,window,window,True
+exit fullscreen,window,window,True
+close window,window,window,True
+snap left,window,window,True
+snap right,window,window,True
+next workspace,window,media,False
+previous workspace,window,media,False
+list windows,windows,windows,True
+next window,windows,media,False
+previous window,windows,media,False
+pick window,windows,windows,True
+switch window,windows,windows,True
+help,base,base,True
+stop,base,base,True
+exit,base,base,True
+quit,base,base,True

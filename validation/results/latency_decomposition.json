@@ -1,0 +1,194 @@
+{
+  "summary": {
+    "profiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sample": "passage_01",
+    "offline_budget_note": "transcribe+route only; live stages via perf protocol"
+  },
+  "rows": [
+    {
+      "profile": 1,
+      "profile_name": "Fast",
+      "stage": "transcribe",
+      "measured": "offline",
+      "ms_mean": 1470.4,
+      "ms_p50": 1444.72,
+      "ms_p95": 1496.09
+    },
+    {
+      "profile": 1,
+      "profile_name": "Fast",
+      "stage": "route",
+      "measured": "offline",
+      "ms_mean": 0.6,
+      "ms_p50": 0.46,
+      "ms_p95": 0.75
+    },
+    {
+      "profile": 1,
+      "profile_name": "Fast",
+      "stage": "record_vad",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 1,
+      "profile_name": "Fast",
+      "stage": "plugin",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 1,
+      "profile_name": "Fast",
+      "stage": "tts",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 2,
+      "profile_name": "Balanced",
+      "stage": "transcribe",
+      "measured": "offline",
+      "ms_mean": 4504.24,
+      "ms_p50": 4486.13,
+      "ms_p95": 4522.34
+    },
+    {
+      "profile": 2,
+      "profile_name": "Balanced",
+      "stage": "route",
+      "measured": "offline",
+      "ms_mean": 0.45,
+      "ms_p50": 0.44,
+      "ms_p95": 0.45
+    },
+    {
+      "profile": 2,
+      "profile_name": "Balanced",
+      "stage": "record_vad",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 2,
+      "profile_name": "Balanced",
+      "stage": "plugin",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 2,
+      "profile_name": "Balanced",
+      "stage": "tts",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 3,
+      "profile_name": "Accurate",
+      "stage": "transcribe",
+      "measured": "offline",
+      "ms_mean": 20472.09,
+      "ms_p50": 20338.65,
+      "ms_p95": 20605.54
+    },
+    {
+      "profile": 3,
+      "profile_name": "Accurate",
+      "stage": "route",
+      "measured": "offline",
+      "ms_mean": 0.44,
+      "ms_p50": 0.4,
+      "ms_p95": 0.49
+    },
+    {
+      "profile": 3,
+      "profile_name": "Accurate",
+      "stage": "record_vad",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 3,
+      "profile_name": "Accurate",
+      "stage": "plugin",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 3,
+      "profile_name": "Accurate",
+      "stage": "tts",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 4,
+      "profile_name": "Maximum",
+      "stage": "transcribe",
+      "measured": "offline",
+      "ms_mean": 21992.16,
+      "ms_p50": 21716.18,
+      "ms_p95": 22268.14
+    },
+    {
+      "profile": 4,
+      "profile_name": "Maximum",
+      "stage": "route",
+      "measured": "offline",
+      "ms_mean": 0.46,
+      "ms_p50": 0.44,
+      "ms_p95": 0.47
+    },
+    {
+      "profile": 4,
+      "profile_name": "Maximum",
+      "stage": "record_vad",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 4,
+      "profile_name": "Maximum",
+      "stage": "plugin",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    },
+    {
+      "profile": 4,
+      "profile_name": "Maximum",
+      "stage": "tts",
+      "measured": "live-only (ECHOBASE_TRACK_PERF protocol)",
+      "ms_mean": "",
+      "ms_p50": "",
+      "ms_p95": ""
+    }
+  ]
+}
